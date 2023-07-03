@@ -1,3 +1,6 @@
+## Hosted Link
+https://sam-gitrepo.github.io/Movie-Booking-JS---JS-Major-Project-Movie-Booking-ReactJS-Redux-Node-Express---7g5cjcb8u62v/
+
 First step in the website will be making a nav bar using flex.
 Inside the nav you will have a div with classname logo and a list 
 for displaying the respective links as in the mock UI. 
