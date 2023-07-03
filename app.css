@@ -4,47 +4,33 @@
     box-sizing: border-box;
 }
 
-
-.navbar-container{
+.nav-container{
     display: flex;
     background-color: rgb(0, 0, 255);
     padding: 12px 16px;
     color: rgb(255, 255, 255);
     justify-content: space-between;
 }
-
-.link-container{
+.nav-link-container{
     display: flex;
     list-style: none;
     width: 40%;
     justify-content: space-evenly;
 }
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
 
-.main-container{
+.movie-holder{
     margin: 20px 10px;
     display: flex;
     justify-content: space-evenly;
 }
 
-a{
-    text-decoration: none;
-    color: #fff
-}
-
-h4{
-    color: black
-}
-
 .movie-img-wrapper{
     height: 200px;
     width: 150px
-}
-
-.d-none{
-    display: none;
-}
-.v-none{
-    visibility: hidden;
 }
 #booker{
     display: flex;
@@ -65,26 +51,78 @@ h4{
 .available-seat{
     background-color: green;
 }
-.booking-grid{
-    display: grid;
-    grid-template-columns: repeat(4, 75px);
-    grid-template-rows: repeat(3, 75px);
-    gap: 10px;
-}
+
 #booker-grid-holder{
     display: flex;
-    margin: 20px;
+    margin: 25px;
     width: 70%;
     justify-content: space-between;
 }
-.selected-seat{
-    outline: 4px solid blue;
+
+.booking-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(3, 70px);
+    gap: 10px;
 }
 #book-ticket-btn{
     padding: 10px 20px;
-    background-color: blue;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: solid rgb(36, 34, 34) 1px;
+    border-radius: 7px;
+    /* font-size: large; */
     cursor: pointer;
 }
+.selected-seat{
+    border: 4px outset rgb(0, 0, 0);
+}
+h4{
+    color: black
+}
+
+
+@media (max-width : 650px) {
+
+
+
+    #booker-grid-holder{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #booker-grid-holder>*:last-child{
+        margin-top: 10px;
+    }
+
+    .movie-holder{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.d-none{
+    display: none;
+}
+.v-none{
+    visibility: hidden;
+}
+
